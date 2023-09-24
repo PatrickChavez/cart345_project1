@@ -1,0 +1,124 @@
+@font-face {
+    font-family: IBMPS55RE;
+    src: url(fonts/Web437_IBM_PS-55_re.woff);
+}
+
+@font-face {
+    font-family: IBMBIOS;
+    src: url(fonts/Web437_IBM_BIOS.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 2rem;
+    font-family: IBMPS55RE;
+    text-align: center;
+    background-color: rgb(211, 211, 181);
+}
+
+ul {
+    list-style-type: none;
+    /* Remove identation */
+    padding: 0;
+}
+
+li {
+    margin: 20px 0;
+}
+
+footer {
+    /* width: 5%; */
+    height: 30px;
+}
+
+.advCanvas {
+    width: 640px;
+    height: 480px;
+    background-color: rgb(171, 189, 168);
+    /* Centering canvas */
+    margin: 5% auto;
+    z-index: -5;
+    border: 5px double black;
+}
+
+.advCanvas img {
+    cursor: pointer;
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#misterB {
+    top: 54%;
+    left: 54%;
+    /* Make sure it doesn't overlap with the boat */
+    z-index: 5;
+}
+
+#boat {
+    top: 3%;
+    left: 30%;
+}
+
+#sun {
+    top: 2%;
+    left: 31%;
+}
+
+#cloud1 {
+    top: 3%;
+    left: 58%;
+}
+
+#cloud2 {
+    top: 7%;
+    left: 50%;
+}
+
+#cloud3 {
+    top: 10%;
+    left: 63%;
+}
+
+#water {
+    top: 83%;
+    left: 30%;
+    opacity: 0.7;
+    /* Make sure it doesn't overlap with the boat */
+    z-index: 5;
+}
+
+
+.creditsLink {
+    position: fixed;
+    top: 3%;
+    left: 88%;
+    margin:5px;
+    font-size: 2rem;
+}
+
+#musicButton, #stopButton {
+    cursor: pointer;
+}
+
+#musicButton:hover, #stopButton:hover {
+    color: #800000;
+}
+
+#musicButton:active, #stopButton:active {
+    color: #FF0000;
+}
+
+.tagline {
+    text-align: center;
+}
+
+.tagline img {
+    position: fixed;
+    top: 85%;
+    left: 38%;
+}
