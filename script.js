@@ -40,52 +40,52 @@ let stopButton = document.getElementById("stopButton");
 
 // Clicking an object changes its appearance and plays a sound effect
 function changeMisterB() {
-    if (misterB.src.match("../images/MrB/MrB_2.gif")) {
-        misterB.src = "../images/MrB/MrBNew1.gif";
+    if (misterB.src.match("images/MrB/MrB_2.gif")) {
+        misterB.src = "images/MrB/MrBNew1.gif";
         console.log("Change!");
         mrBSFX.play();
     }
-    else if (misterB.src.match("../images/MrB/MrBNew1.gif")) {
-        misterB.src = "../images/MrB/MrB_2.gif";
+    else if (misterB.src.match("images/MrB/MrBNew1.gif")) {
+        misterB.src = "images/MrB/MrB_2.gif";
         console.log("Changed!");
         mrBSFX.play();
     }
 }
 
 function changeBoat() {
-    if (boat.src.match("../images/Boat.png")) {
-        boat.src = "../images/Squid.png";
+    if (boat.src.match("images/Boat.png")) {
+        boat.src = "images/Squid.png";
         console.log("Change!");
         boatSFX.play();
     }
-    else if (boat.src.match("../images/Squid.png")) {
-        boat.src = "../images/Boat.png";
+    else if (boat.src.match("images/Squid.png")) {
+        boat.src = "images/Boat.png";
         console.log("Changed!");
         boatSFX.play();
     }
 }
 
 function changeSun() {
-    if (sun.src.match("../images/Sun/Sun1.gif")) {
-        sun.src = "../images/Moon/Moon1.gif";
+    if (sun.src.match("images/Sun/Sun1.gif")) {
+        sun.src = "images/Moon/Moon1.gif";
         console.log("Change!");
         sunSFX.play();
     }
-    else if (sun.src.match("../images/Moon/Moon1.gif")) {
-        sun.src = "../images/Sun/Sun1.gif";
+    else if (sun.src.match("images/Moon/Moon1.gif")) {
+        sun.src = "images/Sun/Sun1.gif";
         console.log("Changed!");
         sunSFX.play();
     }
 }
 
 function changeWater() {
-    if (water.src.match("../images/Water1.gif")) {
-        water.src = "../images/SideWater1.gif";
+    if (water.src.match("images/Water1.gif")) {
+        water.src = "images/SideWater1.gif";
         console.log("Change!");
         waterSFX.play();
     }
-    else if (water.src.match("../images/SideWater1.gif")) {
-        water.src = "../images/Water1.gif";
+    else if (water.src.match("images/SideWater1.gif")) {
+        water.src = "images/Water1.gif";
         console.log("Changed!");
         waterSFX.play();
     }
@@ -93,13 +93,13 @@ function changeWater() {
 
 function changeClouds() {
     // Using "this" to target the image
-    if (this.src.match("../images/Cloud/Cloud_1.gif")) {
-        this.src = "../images/Seagull/Seagull1.gif";
+    if (this.src.match("images/Cloud/Cloud_1.gif")) {
+        this.src = "images/Seagull/Seagull1.gif";
         console.log("Change!");
         cloudsSFX.play();
     }
-    else if (this.src.match("../images/Seagull/Seagull1.gif")) {
-        this.src = "../images/Cloud/Cloud_1.gif";
+    else if (this.src.match("images/Seagull/Seagull1.gif")) {
+        this.src = "images/Cloud/Cloud_1.gif";
         console.log("Changed!");
         cloudsSFX.play();
     }
