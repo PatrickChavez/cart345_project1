@@ -1,11 +1,11 @@
 @font-face {
     font-family: IBMPS55RE;
-    src: url(fonts/Web437_IBM_PS-55_re.woff);
+    src: url(assets/fonts/Web437_IBM_PS-55_re.woff);
 }
 
 @font-face {
     font-family: IBMBIOS;
-    src: url(fonts/Web437_IBM_BIOS.woff);
+    src: url(assets/fonts/Web437_IBM_BIOS.woff);
 }
 
 body {
