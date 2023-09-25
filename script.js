@@ -23,23 +23,23 @@ let water = document.getElementById("water");
 let clouds = document.getElementsByClassName("clouds");
 
 // The sound variables
-let pageMusic = new Audio("../assets/sounds/GB-RPG-B03-1(OP2).mp3");
+let pageMusic = new Audio("assets/sounds/GB-RPG-B03-1(OP2).mp3");
 // The pageMusic properties
 pageMusic.loop = true;
 
-let waterSFX = new Audio("../assets/sounds/maou_se_8bit28.wav");
+let waterSFX = new Audio("assets/sounds/maou_se_8bit28.wav");
 // Adjusting volume
 waterSFX.volume = 0.2;
-let boatSFX = new Audio("../assets/sounds/se_powerup_001.wav");
+let boatSFX = new Audio("assets/sounds/se_powerup_001.wav");
 // Adjusting volume
 boatSFX.volume = 0.4;
-let mrBSFX = new Audio("../assets/sounds/se_jump_002.wav");
+let mrBSFX = new Audio("assets/sounds/se_jump_002.wav");
 // Adjusting volume
 mrBSFX.volume = 0.3;
-let sunSFX = new Audio("../assets/sounds/se_etc_001.wav");
+let sunSFX = new Audio("assets/sounds/se_etc_001.wav");
 // Adjusting volume
 sunSFX.volume = 0.4;
-let cloudsSFX = new Audio("../assets/sounds/se_jump_004.wav");
+let cloudsSFX = new Audio("assets/sounds/se_jump_004.wav");
 // Adjusting volume
 cloudsSFX.volume = 0.4;
 
@@ -50,52 +50,52 @@ let stopButton = document.getElementById("stopButton");
 
 // Clicking an object changes its appearance and plays a sound effect
 function changeMisterB() {
-    if (misterB.src.match("../assets/images/MrB/MrB_2.gif")) {
-        misterB.src = "../assets/images/MrB/MrBNew1.gif";
+    if (misterB.src.match("assets/images/MrB/MrB_2.gif")) {
+        misterB.src = "assets/images/MrB/MrBNew1.gif";
         console.log("Change!");
         mrBSFX.play();
     }
-    else if (misterB.src.match("../assets/images/MrB/MrBNew1.gif")) {
-        misterB.src = "../assets/images/MrB/MrB_2.gif";
+    else if (misterB.src.match("assets/images/MrB/MrBNew1.gif")) {
+        misterB.src = "assets/images/MrB/MrB_2.gif";
         console.log("Changed!");
         mrBSFX.play();
     }
 }
 
 function changeBoat() {
-    if (boat.src.match("../assets/images/Boat.png")) {
-        boat.src = "../assets/images/Squid.png";
+    if (boat.src.match("assets/images/Boat.png")) {
+        boat.src = "assets/images/Squid.png";
         console.log("Change!");
         boatSFX.play();
     }
-    else if (boat.src.match("../assets/images/Squid.png")) {
-        boat.src = "../assets/images/Boat.png";
+    else if (boat.src.match("assets/images/Squid.png")) {
+        boat.src = "assets/images/Boat.png";
         console.log("Changed!");
         boatSFX.play();
     }
 }
 
 function changeSun() {
-    if (sun.src.match("../assets/images/Sun/Sun1.gif")) {
-        sun.src = "../assets/images/Moon/Moon1.gif";
+    if (sun.src.match("assets/images/Sun/Sun1.gif")) {
+        sun.src = "assets/images/Moon/Moon1.gif";
         console.log("Change!");
         sunSFX.play();
     }
-    else if (sun.src.match("../assets/images/Moon/Moon1.gif")) {
-        sun.src = "../assets/images/Sun/Sun1.gif";
+    else if (sun.src.match("assets/images/Moon/Moon1.gif")) {
+        sun.src = "assets/images/Sun/Sun1.gif";
         console.log("Changed!");
         sunSFX.play();
     }
 }
 
 function changeWater() {
-    if (water.src.match("../assets/images/Water1.gif")) {
-        water.src = "../assets/images/SideWater1.gif";
+    if (water.src.match("assets/images/Water1.gif")) {
+        water.src = "assets/images/SideWater1.gif";
         console.log("Change!");
         waterSFX.play();
     }
-    else if (water.src.match("../assets/images/SideWater1.gif")) {
-        water.src = "../assets/images/Water1.gif";
+    else if (water.src.match("assets/images/SideWater1.gif")) {
+        water.src = "assets/images/Water1.gif";
         console.log("Changed!");
         waterSFX.play();
     }
@@ -103,13 +103,13 @@ function changeWater() {
 
 function changeClouds() {
     // Using "this" to target the image
-    if (this.src.match("../assets/images/Cloud/Cloud_1.gif")) {
-        this.src = "../assets/images/Seagull/Seagull1.gif";
+    if (this.src.match("assets/images/Cloud/Cloud_1.gif")) {
+        this.src = "assets/images/Seagull/Seagull1.gif";
         console.log("Change!");
         cloudsSFX.play();
     }
-    else if (this.src.match("../assets/images/Seagull/Seagull1.gif")) {
-        this.src = "../assets/images/Cloud/Cloud_1.gif";
+    else if (this.src.match("assets/images/Seagull/Seagull1.gif")) {
+        this.src = "assets/images/Cloud/Cloud_1.gif";
         console.log("Changed!");
         cloudsSFX.play();
     }
